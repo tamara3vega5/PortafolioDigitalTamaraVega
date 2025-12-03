@@ -1,4 +1,4 @@
-/* ===== VARIABLES (🎨 Personaliza colores aquí fácilmente) ===== */
+
 :root {
     --primary: #b74bb5;       /* Rosa principal */
     --primary-light: #df8fd5; /* Rosa claro */
@@ -215,7 +215,6 @@ section {
     border-radius: 2px;
 }
 
-/* SKILLS - ✅ ACTUALIZADO PARA TUS LENGUAJES */
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -406,4 +405,5 @@ footer {
     .skills-container {
         grid-template-columns: 1fr;
     }
+
 }
