@@ -5,8 +5,7 @@ const navMenu = document.getElementById('navMenu');
 if (menuToggle && navMenu) {
     menuToggle.addEventListener('click', () => {
         navMenu.classList.toggle('active');
-        
-        // Animación del icono hamburguesa
+
         const spans = menuToggle.querySelectorAll('span');
         if (navMenu.classList.contains('active')) {
             spans[0].style.transform = 'rotate(45deg) translate(5px, 6px)';
@@ -22,7 +21,7 @@ if (menuToggle && navMenu) {
     navMenu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             navMenu.classList.remove('active');
-            // Restaurar icono
+
             const spans = menuToggle.querySelectorAll('span');
             spans.forEach(span => {
                 span.style.transform = '';
@@ -34,8 +33,7 @@ if (menuToggle && navMenu) {
 
 document.addEventListener("DOMContentLoaded", () => {
     const roleSpan = document.getElementById("role");
-    
-    // 📝 EDITA AQUÍ: Añade o cambia roles
+
     const roles = [
         "Frontend Developer",
         "Aprendiz Apasionada",
@@ -71,4 +69,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     type();
+
 });
